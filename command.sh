@@ -1,4 +1,4 @@
 #!/bin/bash -l
-#SBATCH --mem 1000
+#SBATCH -J test
 
 java -cp .:PCJ.jar Main

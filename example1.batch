@@ -1,0 +1,6 @@
+#!/bin/bash -l
+
+#SBATCH -J test
+#SBATCH --output="wynik1.txt"
+
+java -cp .:PCJ.jar Eaxample1

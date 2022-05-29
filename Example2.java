@@ -35,7 +35,9 @@ public class Example2 implements StartPoint{
 
 
         for(int i = 0; i < PCJ.threadCount(); i++){
-            System.out.println(PCJ.myId());
+            if(i == PCJ.myId()){
+                System.out.println(numbers[i]);
+            }
         }
     }
 }

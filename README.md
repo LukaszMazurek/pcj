@@ -1,13 +1,13 @@
 # Setup
 
-to compile program
+to compile program na linuxie używaj .: na widowsie .\
 
 ```
 javac -cp .:PCJ.jar Example1
 javac -cp C:\Users\ŁukaszMazurek\Desktop\pcj\PCJ.jar Example2.java
 ```
 
-to start program run command
+to start program run command na linuxie używaj .: na widowsie .\
 ```
 java -cp .:PCJ.jar Example1
 java -cp C:\Users\ŁukaszMazurek\Desktop\pcj\PCJ.jar Example2.java

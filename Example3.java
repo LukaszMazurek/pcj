@@ -1,7 +1,7 @@
 import org.pcj.*;
 
 
-@RegisterStorage(Example2.Shared.class)
+@RegisterStorage(Example3.Shared.class)
 public class Example3 implements StartPoint{
 
     @Storage(Example3.class)

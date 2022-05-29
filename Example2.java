@@ -34,10 +34,8 @@ public class Example2 implements StartPoint{
         PCJ.put(number, 0, Shared.numbers, PCJ.myId());
 
 
-
-        System.out.println(PCJ.myId());
-
-
-
+        for(int i = 0; i < PCJ.threadCount(); i++){
+            System.out.println(PCJ.myId());
+        }
     }
 }

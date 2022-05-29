@@ -31,13 +31,14 @@ public class Example2 implements StartPoint{
 
         int number = random.nextInt();
 
-        PCJ.put(number, 0, Shared.numbers, PCJ.myId());
-
-
+        // PCJ.put(number, 0, Shared.numbers, PCJ.myId());
+        PCJ.put(PCJ.myId(), PCJ.myId(), Shared.numbers, PCJ.myId());
+        PCJ.barrier();
         for(int i = 0; i < PCJ.threadCount(); i++){
             if(i == PCJ.myId()){
                 System.out.println(numbers[i]);
             }
+            PCJ.barrier();
         }
     }
 }

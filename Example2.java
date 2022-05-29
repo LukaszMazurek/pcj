@@ -34,14 +34,10 @@ public class Example2 implements StartPoint{
         PCJ.put(number, 0, Shared.numbers, PCJ.myId());
 
 
-        if(PCJ.myId() == 0){
-            PCJ.waitFor(Shared.numbers, PCJ.threadCount());
 
-            for(int i = 0; i < PCJ.threadCount(); i++){
-                System.out.println(numbers[i]);
-            }
+        System.out.println(PCJ.myId());
 
-        }
+
 
     }
 }

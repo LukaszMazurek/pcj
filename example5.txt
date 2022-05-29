@@ -1,0 +1,9 @@
+#!/bin/bash -l
+
+#SBATCH -J                          # nazwa uruchmionego zadania
+#SBATCH --output="wynik5.txt"       # nazwa pliku, w ktorym zostanie zapisany wynik
+                                      # dzialania skryptu (to, co normalnie wyswietliloby sie na ekranie terminala)
+
+mpiexec.hydra bash -c 'java -cp .:PCJ.jar Example5'
+
+# Jesli brak opcji wskazującej kolejkę np (#SBATCH -p nazwa_kolejki) zadanie uruchomi się na kolejce typu vlade

@@ -6,6 +6,6 @@
 #SBATCH --output="wynik3.txt"         # nazwa pliku, w ktorym zostanie zapisany wynik
                                       # dzialania skryptu (to, co normalnie wyswietliloby sie na ekranie terminala)
 
-mpiexec bash -c 'java -cp .:PCJ.jar Example2'
+mpiexec bash -c 'java -cp .\PCJ.jar Example2'
 
 # Jesli brak opcji wskazującej kolejkę np (#SBATCH -p nazwa_kolejki) zadanie uruchomi się na kolejce typu vlade

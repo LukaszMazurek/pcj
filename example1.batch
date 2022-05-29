@@ -3,4 +3,4 @@
 #SBATCH -J test
 #SBATCH --output="wynik1.txt"
 
-java -cp .:PCJ.jar Eaxample1
+java -cp .\PCJ.jar Eaxample1

@@ -3,7 +3,7 @@
 #SBATCH -J                          # nazwa uruchmionego zadania
 #SBATCH -N 2                        # liczba węzłów
 #SBATCH --ntasks-per-node=8         # liczba zadań na węźle
-#SBATCH --output="wynik3.txt"       # nazwa pliku, w ktorym zostanie zapisany wynik
+#SBATCH --output="wynik4.txt"       # nazwa pliku, w ktorym zostanie zapisany wynik
                                       # dzialania skryptu (to, co normalnie wyswietliloby sie na ekranie terminala)
 
 mpiexec.hydra bash -c 'java -cp .:PCJ.jar Example4'

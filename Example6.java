@@ -13,11 +13,11 @@ public class Example6 implements StartPoint {
         String[] threadsDescriptions = new String[threadsNumberPerNode * 2];
 
         for(int i = 0; i < threadsNumberPerNode; i++){
-            threadsDescriptions[i] = "localhost";
+            threadsDescriptions[i] = "b01.solaris:8090";
         }
 
         for(int i = 0; i < threadsNumberPerNode; i++){
-            threadsDescriptions[i + threadsNumberPerNode] = "localhost:8090";
+            threadsDescriptions[i + threadsNumberPerNode] = "b02.solaris:8090";
         }
 
         PCJ.deploy(Example6.class, new NodesDescription(threadsDescriptions));

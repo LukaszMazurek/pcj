@@ -26,11 +26,13 @@ public class Example6 implements StartPoint {
     @Override
     public void main() {
         PCJ.barrier();
-        sharedArray[PCJ.myId()] = PCJ.myId();
-        PCJ.broadcast(sharedArray, Shared.sharedArray);
+        PCJ.put(PCJ.myId(),0, Shared.sharedArray, PCJ.myId());
         PCJ.barrier();
-        for(int i = 0; i < PCJ.threadCount(); i++){
-            System.out.println(sharedArray);
+
+        if (PCJ.myId() == 0){
+            PCJ.broadcast(sharedArray, Shared.sharedArray);
         }
+        PCJ.waitFor(Shared.sharedArray);
+        System.out.println(sharedArray[PCJ.myId()]);
     }
 }

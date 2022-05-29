@@ -1,11 +1,11 @@
 #!/bin/bash -l
 
-#SBATCH -J                      # nazwa uruchmionego zadania
-#SBATCH -N 2                          # liczba węzłów
-#SBATCH --ntasks-per-node=2           # liczba zadań na węźle
-#SBATCH --output="wynik3.txt"         # nazwa pliku, w ktorym zostanie zapisany wynik
+#SBATCH -J                          # nazwa uruchmionego zadania
+#SBATCH -N 2                        # liczba węzłów
+#SBATCH --ntasks-per-node=8         # liczba zadań na węźle
+#SBATCH --output="wynik3.txt"       # nazwa pliku, w ktorym zostanie zapisany wynik
                                       # dzialania skryptu (to, co normalnie wyswietliloby sie na ekranie terminala)
 
-mpiexec.hydra bash -c 'java -cp .:PCJ.jar Example2'
+mpiexec.hydra bash -c 'java -cp .:PCJ.jar Example3'
 
 # Jesli brak opcji wskazującej kolejkę np (#SBATCH -p nazwa_kolejki) zadanie uruchomi się na kolejce typu vlade

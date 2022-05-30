@@ -6,6 +6,6 @@
 #SBATCH --output="wynik6.txt"       # nazwa pliku, w ktorym zostanie zapisany wynik
                                       # dzialania skryptu (to, co normalnie wyswietliloby sie na ekranie terminala)
 
-mpiexec.hydra bash -c 'java -cp .:PCJ.jar Example6'
+mpiexec.hydra -hostsfile nodes.txt bash -c 'java -cp .:PCJ.jar Example6'
 
 # Jesli brak opcji wskazującej kolejkę np (#SBATCH -p nazwa_kolejki) zadanie uruchomi się na kolejce typu vlade

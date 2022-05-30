@@ -1,0 +1,2 @@
+b03.solaris:8091
+b04.solaris:8091

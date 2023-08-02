@@ -1,19 +1,19 @@
 # Setup
 
-to compile program na linuxie używaj .: na widowsie .\
+compile programs (for linux use .: insted of .\)
 
 ```
 javac -cp .:PCJ.jar Example1
-javac -cp C:\Users\ŁukaszMazurek\Desktop\pcj\PCJ.jar Example2.java
+javac -cp path\PCJ.jar Example2.java
 ```
 
-to start program run command na linuxie używaj .: na widowsie .\
+run programs
 ```
 java -cp .:PCJ.jar Example1
-java -cp C:\Users\ŁukaszMazurek\Desktop\pcj\PCJ.jar Example2.java
+java -cp path\PCJ.jar Example2.java
 ```
 
-to start program on linux cluster with MPI library
+start programs on cluster with mpi
 ```
 mpiexec bash -c 'java -cp .:PCJ.jar HelloWorld'
 ```

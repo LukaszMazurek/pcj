@@ -1,3 +1,5 @@
+# Examples of pcj (parralel computing in java) library usage for parallel programming
+
 # Setup
 
 compile programs (for linux use .: insted of .\)
